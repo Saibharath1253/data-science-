@@ -1,0 +1,10 @@
+n = int(input("Enter no. of pairs: "))
+pair = []
+for i in range(n):
+    key = input("Enter the key for pair {0}: ".format(i+1))
+    value = input("Enter the value for pair {0}: ".format(i+1))
+    pair.append((key, value))
+
+print(pair)
+result = dict(pair)
+print("\nAfter conversion to dictionary :", result)
